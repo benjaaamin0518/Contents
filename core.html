@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="./try.png">
+
+    <meta charset="UTF-8">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@nytimes">
+    <meta name="twitter:creator" content="@SarahMaslinNir">
+    <meta name="twitter:title" content="CONTENTS!　-作品の投稿や閲覧が行えるサイト。-
+">
+    <meta name="twitter:description" content="
+">
+    <meta name="twitter:image:src" content="http://hr10dan21534.php.xdomain.jp/kskjg.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CONTENTS!　-作品の投稿や閲覧が行えるサイト。-</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        function switchByWidth() {
+            if (window.matchMedia("(max-width: 767px)").matches) {
+
+            } else if (window.matchMedia("(min-width:768px)").matches) {
+                location.href = "out.html";
+            }
+        }
+
+        //ロードとリサイズの両方で同じ処理を付与する
+        window.onload = switchByWidth;
+        window.onresize = switchByWidth;
+
+        $('head').append(
+            '<style type="text/css">.tp1 {display:none;}</style>'
+        );
+        $(window).load(function () {
+            $('.tp1').fadeIn("slow");
+        });
+        $('head').append(
+            '<style type="text/css">.toukou {display:none;}</style>'
+
+        );
+        $('head').append(
+            '<style type="text/css">.etsuran {display:none;}</style>'
+
+        );
+        $('head').append(
+            '<style type="text/css">span {display:none;}</style>'
+
+        );
+        $(window).delay(1300).queue(function () {
+            $('.toukou').fadeIn("slow");
+            $('span').fadeIn("slow");
+
+            $('.etsuran').fadeIn("slow");
+
+        });
+
+    </script>
+    <style>
+        body {
+
+            background-color: #f3f2f2;
+
+        }
+
+        .menu {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+
+            width: 100%;
+            height: 75px;
+            background-color: white;
+            z-index: 100000;
+
+        }
+
+        .menu img {
+            position: absolute;
+            top: 8px;
+            left: 10px;
+
+            width: 50%;
+            height: 60px;
+        }
+
+        #bar {
+            position: absolute;
+            top: 0px;
+            left: 283px;
+            width: 25%;
+            height: 75px;
+            background-color: #ff82b2d8;
+            list-style: none;
+            z-index: 100000000000;
+        }
+
+        #bar li {
+            width: 30px;
+
+            position: relative;
+            left: 25px;
+            top: 18px;
+            line-height: 15px;
+            font-size: 45px;
+            font-weight: 800;
+            color: white;
+            border-radius: 15px;
+        }
+
+        .tp1 {
+            position: relative;
+            top: 100px;
+            left: 5px;
+            border-radius: 8px;
+            box-shadow: 5px 5px 10px #2e2e2e54;
+            width: 92%;
+            background-color: #ffffff;
+            font-size: 17px;
+            padding: 10px;
+            z-index: 100;
+        }
+
+        .tp2 {
+            position: relative;
+            top: -10px;
+
+            font-family: sans-serif;
+            line-height: 35px;
+            color: #2e2e2ece;
+
+
+
+
+        }
+
+        #ghq {
+            position: fixed;
+            left: 0px;
+            top: -100px;
+            /* メニューのwidth + padding */
+            width: 100%;
+            /* メニューのwidth */
+            height: 50px;
+
+            z-index: 1000;
+            font-family: sans-serif;
+
+            list-style: none;
+            transition: top .5s, bottom .5s;
+            /* アニメーション */
+            background-color: #ff82b2d8;
+        }
+
+        #ghq li {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            top: 15px;
+            left: -50px;
+            list-style: none;
+            margin-left: 15px;
+            float: left;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: sans-serif;
+
+        }
+
+        #ghq li {
+            position: relative;
+            top: -10px;
+
+            text-align: center;
+            width: 100%;
+            height: 50px;
+            color: white;
+            font-family: sans-serif;
+            z-index: 10000000;
+
+            padding: 4px;
+        }
+
+        #ghq li a {
+            text-decoration: none;
+            color: white;
+
+
+        }
+
+        .toggle {
+            cursor: pointer;
+            font-family: sans-serif;
+
+        }
+
+        .toggle:hover {}
+
+        #open {
+            display: none;
+        }
+
+        #open:checked+#ghq {
+            top: 73px;
+
+        }
+
+        .toukou {
+            font-family: sans-serif;
+
+            position: relative;
+            top: 130px;
+            left: 100px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffffff;
+            width: 40%;
+            height: 30px;
+            padding: 5px;
+            border: 1px solid #ffffff;
+            box-shadow: 3px 4px 0px #ff82b2d8;
+            background-color: rgb(35, 137, 255);
+        }
+
+        .toukou a {
+
+            color: white;
+            width: 100%;
+            height: 100%;
+            display: block;
+            text-decoration: none;
+
+        }
+
+        .etsuran {
+            font-family: sans-serif;
+
+            position: relative;
+            top: 170px;
+            left: 100px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 200;
+            color: #2e2e2e;
+            width: 40%;
+            height: 30px;
+            padding: 5px;
+            border: 1px solid #ffffff;
+            box-shadow: 3px 4px 0px #ff82b2d8;
+            background-color: rgba(184, 184, 184, 0.562);
+
+        }
+
+        .etsuran a {
+
+            color: #2e2e2e;
+            width: 100%;
+            height: 100%;
+            display: block;
+            text-decoration: none;
+
+        }
+
+        span {
+            position: relative;
+            top: 90px;
+            left: 50px;
+            color: red;
+            font-family: sans-serif;
+
+            font-size: 15px;
+        }
+
+        .copy {
+            position: relative;
+            top: 200px;
+
+            width: 100%;
+            background-color: #ffffff;
+            color: #2e2e2e;
+            font-size: 12px;
+            padding: 10px;
+            text-align: center;
+            font-family: sans-serif;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="menu"><img src="kskjg.png">
+
+    </div>
+
+    <label class="toggle" for="open"><i class="fa fa-bars" aria-hidden="true">
+            <div id="bar">
+                <li>ー</li>
+                <li>ー</li>
+                <li>ー</li>
+            </div>
+    </label>
+
+    <input id="open" type="checkbox">
+    <div id="ghq">
+
+        <nav>
+
+            <div class="gnav">
+                <ul>
+                    <li>トップページ</li>
+
+                </ul>
+        </nav>
+        </nav>
+
+
+
+    </div>
+
+    <div class="tp1"><br>
+        <div class="tp2">CONTENTS! (こんてんつ！) はみんなが自由に台本や漫画、その他画像を投稿することができるサイト。
+            <br>
+            <p>また投稿された個人の作品をサイトビュアーで簡単に閲覧することができるサイトです。
+
+            </p>
+            <br>
+            手順については<a target="blank" href="tezyun.html">以下のページ</a>を参考にしてください。
+            <br><br>
+            2019年6月1日　－<a href="sisutemunituite.html">システムについて。</a><br>
+            2019年6月1日　－<a href="saitonituite.html">このサイトについて。</a><br>
+
+        </div>
+    </div>
+    <div class="toukou"><a href="kakunin.html">投稿する！</a></div>
+    <div class="etsuran"><a href="miru.php">見る！</a></div>
+    <div class="copy">&copy; 2020 <u>CONTENTS!</u> ALL Rights reserved</div>
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+    body{
+
+        background-color:#f3f2f2;
+        
+                }
+            .menu{
+                position:absolute;
+                top:0px;
+                left:0px;
+        
+        width:100%;
+        height:75px;
+        background-color:white;
+        z-index:100000;
+        
+            }
+            .menu img{
+                position:absolute;
+                top:8px;
+                left:10px;
+        
+                width:50%;
+                height:60px;
+            }
+            #bar{
+                position:absolute;
+                top:0px;
+                left:283px;
+        width:25%;
+        height:75px;
+        background-color:#ff82b2d8;
+        list-style:none;
+        z-index:100000000000;
+            }
+            #bar li{
+                width:30px;
+        
+                position:relative;
+                left:25px;
+        top:18px;
+        line-height:15px;
+        font-size:45px;
+        font-weight:800;
+        color:white;
+        border-radius:15px;
+            }
+            .tp1{
+                position:relative;
+                top:100px;
+                left:5px;
+                border-radius:8px;
+                box-shadow:5px 5px 10px #2e2e2e54;
+        width:92%;
+        background-color:#ffffff;
+        font-size: 17px;
+        padding:10px;
+        z-index:100;
+            }
+            .tp2{
+                position:relative;
+                top:-10px;
+        
+                font-family:sans-serif;
+        line-height:35px;
+        color:#2e2e2ece;
+        
+        
+        
+        
+            }
+            .tp2 h2{
+                font-family:sans-serif;
+        line-height:35px;
+        color:#000000;
+        
+        
+        
+        
+            }
+        
+            #ghq {
+          position: fixed;
+          left:0px;
+         top: -100px; /* メニューのwidth + padding */
+          width: 100%; /* メニューのwidth */
+          height: 50px;
+        
+        z-index:1000;
+        font-family:sans-serif;
+        
+          list-style:none;
+          transition: top .5s, bottom .5s; /* アニメーション */
+          background-color:#ff82b2d8;
+        }
+        #ghq li{
+        width: 50px;
+        height:50px;
+        position:relative;
+        top:15px;
+        left:-50px;
+        list-style:none;
+        margin-left:15px;
+        float:left;
+        text-decoration:none;
+        font-size:20px;
+        font-family:sans-serif;
+        
+        }
+        #ghq li {
+            position:relative;
+            top:-10px;
+        
+            text-align: center;
+        width:100%;
+        height:50px;
+        color:white;
+        font-family:sans-serif;
+        z-index:10000000;
+        
+        padding:4px;
+        }
+        
+         #ghq li a{
+        text-decoration:none;
+        color:white;
+         
+         }
+        .toggle {
+          cursor: pointer;
+          font-family:sans-serif;
+        
+        }
+         
+        .toggle:hover {
+        }
+         
+        #open {
+          display: none;
+        }
+         
+        #open:checked + #ghq {
+          top:73px;
+        
+        }
+        .copy{
+            position:relative;
+        top:200px;
+        
+        width:100%;
+        background-color:#ffffff;
+        color:#2e2e2e;
+        font-size:12px;
+        padding:10px;
+        text-align:center;
+        font-family:sans-serif;
+        
+        }
+        .hate{
+        width:92%;
+        height:250px;
+        border:1px solid #cccccc;
+        position:relative;
+        top:-10px;
+        left:15px;
+        background-size: cover;
+        z-index:1000;
+        margin-bottom:8px;
+        }
+        .hate::before{
+          /* 透過した黒を上から重ねるイメージ */
+          background-color: rgba(0,0,0,0.1);
+          z-index:10;
+          /* 自由に位置指定 */
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          content: ' ';
+        }
+        .info img{
+            z-index:1000;
+        width:13%;
+        height:14%;
+        position:absolute;
+        left:260px;
+        top:5px;
+        }
+        .hate a{
+        display:block;
+        width:100%;
+        height:100%;
+        z-index:100000;
+        text-decoration:none;
+        
+        }
+        .maisuu{
+            width:45%;
+        height:15%;
+        font-size:20px;
+        padding:5px;
+        background-color: rgba(0,0,0,0.6);
+        color:white;
+        font-weight:500;
+        text-align:center;
+        
+        
+        }
+         .title{
+            color:#ff428ad8;
+        font-size:20px;
+        position:relative;
+        top:160px;
+        font-weight:540;
+        font-size:22px;
+        z-index:20;
+        }
+        
+    .tp2 h2{
+        font-family:sans-serif;
+    line-height:35px;
+    color:#000000;
+    
+    
+    
+    
+    }
+    
+    
+    .bb{
+    
+        font-size:10px;
+        border-bottom:1px solid #868686;
+        text-align:center;
+        width:80%;
+        
+        }
+        .tp1 img{
+        width:70%;
+        height:250px;
+        border:1px solid #cccccc;
+        }
+        
+    
